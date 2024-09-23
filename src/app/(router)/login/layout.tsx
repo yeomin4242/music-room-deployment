@@ -15,7 +15,7 @@ const pretendard = localFont({
 //페이지 설명을 추가하려면 metadata 객체를 만들고 title 및 description 속성을 추가합니다.
 export const metadata: Metadata = {
   title: "Login - Spotify",
-  description: "Login page for Spotify",
+  description: "Login page for Spotify!",
 };
 
 export default function RootLayout({
@@ -25,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="kr" className={`${pretendard.variable}`}>
-      <body className={pretendard.className}>
-        {children}
-      </body>
+      <body className={pretendard.className}>{children}</body>
     </html>
   );
 }
