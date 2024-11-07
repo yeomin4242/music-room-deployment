@@ -30,5 +30,8 @@ jobs:
       - name: update Vercel
         run: npm i -g vercel@latest
 
+      - name: Pull Vercel
+        run: vercel pull --yes
+
       - name: Build Vercel
-        run: vercel build --prod
+        run: vercel build --yes
