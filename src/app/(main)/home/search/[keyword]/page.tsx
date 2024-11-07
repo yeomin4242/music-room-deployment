@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import superNaturalImage from "@/public/images/superNatural.jpg";
+import superNaturalImage from "@/public/Images/superNatural.jpg";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
