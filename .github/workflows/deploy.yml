@@ -30,11 +30,8 @@ jobs:
       - name: update Vercel
         run: npm i -g vercel@latest
 
-      - name: Set Vercel token
-        run: vercel --token ${{ secrets.VERCEL_TOKEN }}
-
       - name: Pull Vercel
-        run: vercel pull --yes
+        run: vercel pull --token ${{ secrets.VERCEL_TOKEN }} --yes
 
       - name: Build Vercel
-        run: vercel build --yes
+        run: vercel build --token ${{ secrets.VERCEL_TOKEN }} --yes
